@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    <div class="h-screen bg-neutral-800 backgroundcolor">
+      <nav class="">
+        <div class="py-5">
+          <div class="flex justify-between items-center mx-24">
+            <h1
+              class="animate__animated animate__slideInLeft text-3xl text-[#a7ef45]"
+            >
+              <span><</span>Vaikarai<span> /></span>
+            </h1>
+            <ul
+              class="inline-flex p-4 text-[#a7ef45] animate__animated animate__slideInRight"
+            >
+              <li class="mx-2 text-xl">About</li>
+              <li class="mx-2 text-xl">Skills</li>
+              <li class="mx-2 text-xl">Education</li>
+              <li class="mx-2 text-xl">Projects</li>
+              <li class="mx-2 text-xl animate-[slideOutRight]">Github</li>
+            </ul>
+          </div>
+          <hr
+            class="my-2 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-gray-300 to-transparent opacity-80 dark:via-neutral-400"
+          />
+        </div>
+      </nav>
+      <!-- - Naming   -->
+
+      <div class="container layer bg">
+        <div class="layer p-2 rounded-2xl m-2 bg-[rgb(45,45,48)]">
+          <img
+            class="size-10 text-gray-900"
+            src="https://api.iconify.design/ri:javascript-fill.svg?color=%23afadaf"
+            alt=""
+          />
+        </div>
+        <div class="layer p-2 rounded-2xl m-2 bg-[rgb(45,45,48)]">
+          <img
+            class="size-10 text-gray-900"
+            src="https://api.iconify.design/ri:javascript-fill.svg?color=%23afadaf"
+            alt=""
+          />
+        </div>
+        <div class="layer p-2 rounded-2xl m-2 bg-[rgb(45,45,48)]">
+          <img
+            class="size-10 text-gray-900"
+            src="https://api.iconify.design/ri:javascript-fill.svg?color=%23afadaf"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Body -->
+
+      <div class="absolute">
+        <div class="my-28 mx-14 text-left">
+          <div class="">
+            <h1 class="text-gray-200 text-6xl my-5">
+              Hi , I'm
+              <span class="font-semibold">Vaikarai...</span>
+            </h1>
+          </div>
+          <p class="text-6xl text-gray-300">
+            I'm a
+            <span
+              id="element"
+              class="[text-shadow:1px_1px_40px_var(--tw-shadow-color)] shadow-[#a7ef45] text-[#a7ef45] font-semibold"
+            ></span>
+          </p>
+          <p class="text-gray-200 my-14 text-xl w-[30em]">
+            An aspiring frontend developer with a strong hold on JavaScript,
+            CSS, TailwindCSS , Redux and other UI frameworks and diving deep
+            into the vast knowledge of ReactJS.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const typed = new Typed("#element", {
+        strings: ["Front End Developer", "React Developer"],
+        typeSpeed: 200,
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <div class="p-2 rounded-2xl m-2 bg-[rgb(45,45,48)]">
+          <img
+            class="size-10 text-gray-900"
+            src="https://api.iconify.design/ri:javascript-fill.svg?color=%23afadaf"
+            alt=""
+          />
+        </div> -->
