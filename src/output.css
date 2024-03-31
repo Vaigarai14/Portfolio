@@ -592,8 +592,16 @@ video {
   position: absolute;
 }
 
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+
 .m-2 {
   margin: 0.5rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
 }
 
 .mx-14 {
@@ -609,6 +617,11 @@ video {
 .mx-24 {
   margin-left: 6rem;
   margin-right: 6rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .my-14 {
@@ -631,6 +644,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-36 {
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
 .mr-10 {
   margin-right: 2.5rem;
 }
@@ -648,6 +666,31 @@ video {
   height: 2.5rem;
 }
 
+.size-20 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.size-96 {
+  width: 24rem;
+  height: 24rem;
+}
+
+.size-\[20em\] {
+  width: 20em;
+  height: 20em;
+}
+
+.size-\[30em\] {
+  width: 30em;
+  height: 30em;
+}
+
+.size-\[25em\] {
+  width: 25em;
+  height: 25em;
+}
+
 .h-px {
   height: 1px;
 }
@@ -660,12 +703,49 @@ video {
   width: 30em;
 }
 
+.w-20 {
+  width: 5rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[20em\] {
+  width: 20em;
+}
+
+.w-\[25em\] {
+  width: 25em;
+}
+
+.w-\[em\] {
+  width: em;
+}
+
+.w-\[35em\] {
+  width: 35em;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .animate-\[slideOutRight\] {
   animation: slideOutRight;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -685,9 +765,19 @@ video {
   background-color: rgb(45 45 48 / var(--tw-bg-opacity));
 }
 
+.bg-green-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
+}
+
 .bg-neutral-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(10 10 10 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -713,6 +803,16 @@ video {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -721,13 +821,51 @@ video {
   padding: 1rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-48 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-NanumMyeongjo {
+  font-family: Nanum Myeongjo, serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -754,7 +892,16 @@ video {
   font-weight: 600;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .text-\[\#a7ef45\] {
+  --tw-text-opacity: 1;
+  color: rgb(167 239 69 / var(--tw-text-opacity));
+}
+
+.text-\[rgb\(167\2c 239\2c 69\)\] {
   --tw-text-opacity: 1;
   color: rgb(167 239 69 / var(--tw-text-opacity));
 }
@@ -777,6 +924,18 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#a\] {
+  color: #a;
 }
 
 .opacity-80 {
@@ -818,6 +977,39 @@ video {
 .bg {
   background-image: url("../assets/download.png");
   background-attachment: fixed;
+}
+
+/* .iconimage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 80% 50%;
+} */
+
+.text {
+  color: transparent;
+}
+
+.iconimage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://space-portolio.vercel.app/mainIconsdark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-position: 80% 50%; */
+}
+
+.gloss,
+li {
+  text-shadow: 1px 1px 5px;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (prefers-color-scheme: dark) {

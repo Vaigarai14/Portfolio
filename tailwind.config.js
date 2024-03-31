@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  purge: [
-    './src/**/*.html',
-    './src/**/*.js',],
-  darkMode: false,
-  content: [],
+export default {
+  content: [
+    './src/*.html',
+    './src/*.js',
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        NanumMyeongjo: ["Nanum Myeongjo", 'serif']
+      }
+    },
   },
   plugins: [],
 }

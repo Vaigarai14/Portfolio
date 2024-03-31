@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -28,4 +30,32 @@
 .bg {
   background-image: url("../assets/download.png");
   background-attachment: fixed;
+}
+
+/* .iconimage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 80% 50%;
+} */
+
+.text {
+  color: transparent;
+}
+
+.iconimage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://space-portolio.vercel.app/mainIconsdark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-position: 80% 50%; */
+}
+
+.gloss,
+li {
+  text-shadow: 1px 1px 5px;
 }
