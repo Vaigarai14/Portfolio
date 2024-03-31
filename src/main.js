@@ -18,7 +18,7 @@ function animateIcon() {
 }
 animateIcon();
 
-// skills scroller
+//! skills scroller
 
 const scroller = document.querySelectorAll('.scroller')
 
@@ -40,16 +40,15 @@ function addanimation() {
 
     scroll_content.forEach(item => {
         const duplicateItem = item.cloneNode(true)
-        console.log(duplicateItem);
         duplicateItem.setAttribute('data-hidden', true)
         scroll_inner.append(duplicateItem)
     })
 }
 
 
-// Burger menus
+//&  Menu
 document.addEventListener('DOMContentLoaded', function () {
-    // open
+    //^ open
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
 
@@ -63,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // close
+    //^ close
     const close = document.querySelectorAll('.navbar-close');
     const backdrop = document.querySelectorAll('.navbar-backdrop');
 

@@ -79,7 +79,7 @@
   flex-wrap: wrap;
 }
 
-#scroll_inner {
+.scroll_inner {
   display: flex;
 }
 
@@ -98,7 +98,27 @@
 .scroller[data-animated="true"] .scroll_inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll 50s linear infinite;
+  animation: scroll var(--_animation_duration, 40s)
+    var(--_animation_direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation_direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation_direction: forwards;
+}
+
+.scroller[data-duration="slow"] {
+  --_animation_duration: 50s;
+}
+
+.scroller[data-duration="fast"] {
+  --_animation_duration: 15s;
+}
+.scroller[data-duration="avg"] {
+  --_animation_duration: 30s;
 }
 
 @keyframes scroll {
