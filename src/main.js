@@ -17,3 +17,73 @@ function animateIcon() {
 
 }
 animateIcon();
+
+// skills scroller
+
+const scroller = document.querySelectorAll('.scroller')
+
+console.log(scroller);
+
+if (!window.matchMedia("(prefers-reduced-motion :reduce )").matches) {
+    addanimation()
+}
+
+function addanimation() {
+    scroller.forEach((item) => {
+        item.setAttribute("data-animated", true)
+    })
+
+    const scroll_inner = document.querySelector('.scroll_inner')
+
+    const scroll_content = Array.from(scroll_inner.children)
+    console.log(scroll_content);
+
+    scroll_content.forEach(item => {
+        const duplicateItem = item.cloneNode(true)
+        console.log(duplicateItem);
+        duplicateItem.setAttribute('data-hidden', true)
+        scroll_inner.append(duplicateItem)
+    })
+}
+
+
+// Burger menus
+document.addEventListener('DOMContentLoaded', function () {
+    // open
+    const burger = document.querySelectorAll('.navbar-burger');
+    const menu = document.querySelectorAll('.navbar-menu');
+
+    if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+            burger[i].addEventListener('click', function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    // close
+    const close = document.querySelectorAll('.navbar-close');
+    const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+    if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+            close[i].addEventListener('click', function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+
+    if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+            backdrop[i].addEventListener('click', function () {
+                for (var j = 0; j < menu.length; j++) {
+                    menu[j].classList.toggle('hidden');
+                }
+            });
+        }
+    }
+});
