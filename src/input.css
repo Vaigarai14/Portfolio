@@ -175,3 +175,35 @@
     font-size: small;
   }
 }
+
+label,
+input,
+.btn-submit {
+  display: block;
+}
+
+label {
+  color: #94e334;
+  font-size: larger;
+  padding: 10px 0;
+}
+
+input,
+textarea {
+  color: black;
+  padding: 4px 2px;
+  border-radius: 10px;
+}
+
+.btn-submit {
+  padding: 5px 15px;
+  text-align: center;
+  background-color: #66a70a;
+  border-radius: 8px;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  color: #66a70a;
+  border: 2px solid #66a70a;
+}

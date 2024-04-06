@@ -612,6 +612,10 @@ video {
   margin: 0.5rem;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -620,6 +624,11 @@ video {
 .mx-36 {
   margin-left: 9rem;
   margin-right: 9rem;
+}
+
+.mx-48 {
+  margin-left: 12rem;
+  margin-right: 12rem;
 }
 
 .my-10 {
@@ -647,6 +656,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -655,8 +669,8 @@ video {
   display: none;
 }
 
-.h-72 {
-  height: 18rem;
+.h-60 {
+  height: 15rem;
 }
 
 .h-fit {
@@ -666,10 +680,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-80 {
-  height: 20rem;
 }
 
 .min-h-screen {
@@ -682,6 +692,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[26em\] {
+  width: 26em;
 }
 
 .w-\[30em\] {
@@ -699,10 +713,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[20em\] {
-  width: 20em;
 }
 
 .cursor-pointer {
@@ -737,12 +747,25 @@ video {
   gap: 0.5rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.border-\[\#a7ef45\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(167 239 69 / var(--tw-border-opacity));
 }
 
 .bg-neutral-950 {
@@ -755,9 +778,9 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-4 {
@@ -832,6 +855,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -1082,6 +1110,38 @@ video {
   }
 }
 
+label,
+input,
+.btn-submit {
+  display: block;
+}
+
+label {
+  color: #94e334;
+  font-size: larger;
+  padding: 10px 0;
+}
+
+input,
+textarea {
+  color: black;
+  padding: 4px 2px;
+  border-radius: 10px;
+}
+
+.btn-submit {
+  padding: 5px 15px;
+  text-align: center;
+  background-color: #66a70a;
+  border-radius: 8px;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  color: #66a70a;
+  border: 2px solid #66a70a;
+}
+
 .hover\:border-\[\#a7ef45\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(167 239 69 / var(--tw-border-opacity));
@@ -1201,32 +1261,12 @@ video {
     height: fit-content;
   }
 
-  .max-sm\:w-\[30em\] {
-    width: 30em;
-  }
-
-  .max-sm\:w-\[210em\] {
-    width: 210em;
-  }
-
-  .max-sm\:w-\[20em\] {
-    width: 20em;
-  }
-
-  .max-sm\:w-\[0em\] {
-    width: 0em;
-  }
-
-  .max-sm\:w-\[15em\] {
-    width: 15em;
-  }
-
   .max-sm\:w-\[18em\] {
     width: 18em;
   }
 
-  .max-sm\:w-\[em\] {
-    width: em;
+  .max-sm\:w-\[20em\] {
+    width: 20em;
   }
 
   .max-sm\:object-contain {
