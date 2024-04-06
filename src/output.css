@@ -588,28 +588,12 @@ video {
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
 .relative {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .m-10 {
   margin: 2.5rem;
-}
-
-.m-4 {
-  margin: 1rem;
-}
-
-.m-20 {
-  margin: 5rem;
 }
 
 .m-2 {
@@ -646,15 +630,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -665,6 +640,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.max-h-screen {
+  max-height: 100vh;
 }
 
 .w-64 {
@@ -708,19 +687,6 @@ video {
   gap: 0.5rem;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
-.border-\[\#a7ef45\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(167 239 69 / var(--tw-border-opacity));
-}
-
-.border-\[\] {
-  border-color: ;
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -734,10 +700,6 @@ video {
 .bg-red-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(69 10 10 / var(--tw-bg-opacity));
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .p-4 {
@@ -764,21 +726,6 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.py-80 {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -786,10 +733,6 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
 }
 
 .text-left {
@@ -868,12 +811,6 @@ video {
 
 .ring-opacity-100 {
   --tw-ring-opacity: 1;
-}
-
-.backdrop-blur-xl {
-  --tw-backdrop-blur: blur(24px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .\[text-shadow\:1px_1px_40px_var\(--tw-shadow-color\)\] {
@@ -1021,7 +958,7 @@ video {
   }
 
   .iconimage {
-    height: 10vh;
+    height: 50vh;
   }
 }
 
