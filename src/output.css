@@ -982,10 +982,6 @@ video {
     position: absolute;
   }
 
-  .max-md\:bottom-40 {
-    bottom: 10rem;
-  }
-
   .max-md\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -1017,6 +1013,11 @@ video {
     padding-right: 0.5rem;
   }
 
+  .max-md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .max-md\:pt-0 {
     padding-top: 0px;
   }
@@ -1040,12 +1041,8 @@ video {
     line-height: 1.25rem;
   }
 
-  .max-md\:opacity-40 {
-    opacity: 0.4;
-  }
-
-  .max-md\:opacity-20 {
-    opacity: 0.2;
+  .max-md\:opacity-50 {
+    opacity: 0.5;
   }
 }
 
