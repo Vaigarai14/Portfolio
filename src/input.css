@@ -136,3 +136,13 @@
     #578d0c 100%
   );
 }
+
+@media screen and (max-width: 480px) {
+  .textstyle {
+    background-color: lightgreen;
+  }
+
+  .textstyle li {
+    font-size: x-small;
+  }
+}
