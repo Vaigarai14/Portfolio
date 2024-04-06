@@ -29,6 +29,7 @@
   background-image: url(https://space-portolio.vercel.app/mainIconsdark.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 .gloss,
