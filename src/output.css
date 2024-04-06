@@ -697,6 +697,11 @@ video {
   padding: 1rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -710,21 +715,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .pt-20 {
@@ -978,18 +968,6 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
-  .max-lg\:bottom-32 {
-    bottom: 8rem;
-  }
-
-  .max-lg\:bottom-36 {
-    bottom: 9rem;
-  }
-
-  .max-lg\:bottom-40 {
-    bottom: 10rem;
-  }
-
   .max-lg\:bottom-48 {
     bottom: 12rem;
   }
@@ -1029,28 +1007,9 @@ video {
     width: 24rem;
   }
 
-  .max-md\:w-16 {
-    width: 4rem;
-  }
-
   .max-md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .max-md\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .max-md\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .max-md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .max-md\:px-2 {
@@ -1081,12 +1040,12 @@ video {
     line-height: 1.25rem;
   }
 
-  .max-md\:opacity-20 {
-    opacity: 0.2;
-  }
-
   .max-md\:opacity-40 {
     opacity: 0.4;
+  }
+
+  .max-md\:opacity-20 {
+    opacity: 0.2;
   }
 }
 
