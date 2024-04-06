@@ -56,6 +56,31 @@
   font-weight: bold;
 }
 
+.btn-github {
+  background-image: linear-gradient(
+    to right,
+    #408c1d 0%,
+    #94e334 51%,
+    #66a70a 100%
+  );
+  margin: 10px;
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.btn-github:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
 .btn-grad:hover {
   background-position: right center;
   color: #fff;
@@ -143,5 +168,10 @@
   }
   .iconimage {
     height: 50vh;
+  }
+
+  .btn-grad {
+    padding: 5px 15px;
+    font-size: small;
   }
 }

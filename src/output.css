@@ -600,30 +600,6 @@ video {
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.z-0 {
-  z-index: 0;
-}
-
-.-z-0 {
-  z-index: 0;
-}
-
-.z-50 {
-  z-index: 50;
-}
-
-.-z-50 {
-  z-index: -50;
-}
-
-.-z-10 {
-  z-index: -10;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -918,6 +894,31 @@ video {
   font-weight: bold;
 }
 
+.btn-github {
+  background-image: linear-gradient(
+    to right,
+    #408c1d 0%,
+    #94e334 51%,
+    #66a70a 100%
+  );
+  margin: 10px;
+  padding: 10px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.btn-github:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
 .btn-grad:hover {
   background-position: right center;
   color: #fff;
@@ -1009,6 +1010,11 @@ video {
   .iconimage {
     height: 50vh;
   }
+
+  .btn-grad {
+    padding: 5px 15px;
+    font-size: small;
+  }
 }
 
 .hover\:text-\[\#a7ef45\]:hover {
@@ -1019,6 +1025,12 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media not all and (min-width: 1536px) {
+  .max-2xl\:hidden {
+    display: none;
+  }
 }
 
 @media not all and (min-width: 1280px) {
@@ -1039,12 +1051,28 @@ video {
   .max-lg\:block {
     display: block;
   }
+
+  .max-lg\:flex {
+    display: flex;
+  }
+
+  .max-lg\:justify-center {
+    justify-content: center;
+  }
 }
 
 @media not all and (min-width: 768px) {
   .max-md\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .max-md\:flex {
+    display: flex;
+  }
+
+  .max-md\:hidden {
+    display: none;
   }
 
   .max-md\:w-20 {
@@ -1057,6 +1085,10 @@ video {
 
   .max-md\:w-96 {
     width: 24rem;
+  }
+
+  .max-md\:justify-center {
+    justify-content: center;
   }
 
   .max-md\:px-0 {
@@ -1117,5 +1149,17 @@ video {
   .max-sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:hidden {
+    display: none;
   }
 }
