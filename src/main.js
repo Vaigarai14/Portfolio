@@ -52,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const burger = document.querySelectorAll('.navbar-burger');
     const menu = document.querySelectorAll('.navbar-menu');
 
+    console.log(burger, menu);
+
     if (burger.length && menu.length) {
         for (var i = 0; i < burger.length; i++) {
             burger[i].addEventListener('click', function () {
