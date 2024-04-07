@@ -164,6 +164,15 @@ body,
   );
 }
 
+.techstack {
+  background-color: #a7ef45;
+  border-radius: 4em;
+  font-size: small;
+  padding: 5px 10px;
+  color: black;
+  margin: 0 2px;
+}
+
 @media screen and (max-width: 480px) {
   .textstyle li {
     font-size: x-small;
@@ -175,6 +184,10 @@ body,
   .btn-grad {
     padding: 5px 15px;
     font-size: small;
+  }
+  .techstack {
+    font-size: 9.5px;
+    margin: 0;
   }
 }
 
@@ -215,13 +228,4 @@ textarea {
 #submit {
   padding: 8px 0;
   margin: 8px 0;
-}
-
-.techstack {
-  background-color: #a7ef45;
-  border-radius: 4em;
-  font-size: small;
-  padding: 5px 10px;
-  color: black;
-  margin: 0 2px;
 }
