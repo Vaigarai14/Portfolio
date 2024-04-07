@@ -587,26 +587,66 @@
     <!--* Contact Us  -->
     <div class="bg backgroundcolor py-10">
       <div
-        class="flex justify-center items-center border-2 border-[#a7ef45] mx-48 rounded-lg"
+        class="flex justify-evenly items-center max-lg:block max-lg:mx-0 max-sm:text-sm mx-48 rounded-lg"
       >
-        <div class="p-4 m-4 text-white text-xl">
-          <p class="text-4xl text-[#a7ef45] hover:text-white">Contact Me !</p>
-          <p>Feel Free to Contact me by submitting the form below....</p>
-          <div class="flex ">
-            <p class="mx-5">github</p>
-            <p>Linkedin</p>
+        <div class="p-4 m-4 text-white text-xl max-lg:text-center">
+          <p
+            class="text-5xl text-[#a7ef45] hover:text-white max-lg:text-center"
+          >
+            Contact Me !
+          </p>
+          <p class="my-4">
+            Feel Free to Contact me by submitting the form below....
+          </p>
+          <div class="flex max-lg:flex max-lg:justify-center my-2">
+            <a href="https://github.com/Vaigarai14" target="_blank">
+              <img
+                class="mr-4 size-10"
+                src="https://api.iconify.design/skill-icons:github-dark.svg?color=%23dbdbdb"
+                alt=""
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/vaikarai-14-28-l/"
+              target="_blank"
+            >
+              <img
+                class="mr-4 size-10"
+                src="https://api.iconify.design/devicon:linkedin.svg?color=%23dbdbdb"
+                alt=""
+              />
+            </a>
+
+            <a href="https://www.instagram.com/vaigarai14/" target="_blank">
+              <img
+                class="mr-4 size-10"
+                src="https://api.iconify.design/skill-icons:instagram.svg?color=%23dbdbdb"
+                alt=""
+              />
+            </a>
           </div>
         </div>
-        <div class="m-4 text-white">
-          <form action="">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
-            <label for="email">Email</label>
-            <input type="email" name="name" id="name" />
-            <label for="name">Message</label>
-            <textarea name="message" id="" cols="40" rows="5"></textarea>
-            <input class="btn-submit" type="submit" value="Submit" />
-          </form>
+        <div class="max-lg:flex max-lg:justify-center">
+          <div
+            class="m-4 text-white p-6 rounded-xl border-[1px] border-[#a7ef45]"
+          >
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="a25c97d5-a865-4f86-994f-016d8ce3d1a2"
+              />
+
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+              <label for="email">Email</label>
+              <input type="email" name="name" id="name" />
+              <label for="name">Message</label>
+              <textarea name="message" id="" cols="40" rows="5"></textarea>
+              <input class="btn-submit my-2" type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
       </div>
     </div>
