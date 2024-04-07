@@ -9,11 +9,13 @@
   padding: 0;
 }
 
+body,
 .backgroundcolor {
   background-color: black;
   background-image: url("https://assets-global.website-files.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
 }
 
+body,
 .bg {
   background-image: url("../assets/download.png");
   background-attachment: fixed;
@@ -193,6 +195,7 @@ textarea {
   color: black;
   padding: 4px 2px;
   border-radius: 10px;
+  width: 100%;
 }
 
 .btn-submit {
@@ -206,4 +209,8 @@ textarea {
   background-color: white;
   color: #66a70a;
   border: 2px solid #66a70a;
+}
+
+#submit {
+  padding: 8px 0;
 }
