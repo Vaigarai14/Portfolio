@@ -1185,6 +1185,12 @@ body,
   }
 }
 
+@media screen and (max-width: 770px) {
+  .iconimage {
+    height: 50vh;
+  }
+}
+
 label,
 input,
 .btn-submit {
