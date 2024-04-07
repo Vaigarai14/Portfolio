@@ -196,6 +196,7 @@ textarea {
   padding: 4px 2px;
   border-radius: 4px;
   width: 100%;
+  resize: none;
 }
 
 .btn-submit {
@@ -214,4 +215,13 @@ textarea {
 #submit {
   padding: 8px 0;
   margin: 8px 0;
+}
+
+.techstack {
+  background-color: #a7ef45;
+  border-radius: 4em;
+  font-size: small;
+  padding: 5px 10px;
+  color: black;
+  margin: 0 2px;
 }
